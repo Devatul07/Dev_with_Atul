@@ -1,0 +1,220 @@
+/* BODY AND SECTIONS */
+/* ----------------------------------------------------- */
+
+/* All body and section styling available here (except for the fonts, which are declared in the defaults+fonts.css). One property has already been declared on the body and section element, respectively */
+
+
+/* SOME CSS PROPERTIES YOU COULD USE:
+{
+    margin: 20px;
+    margin: 20%;
+
+    margin-left: ;
+    margin-right: ;
+
+    padding-left: 20px;
+    padding-right: 20%;
+    padding: 0 50px;
+    padding: 10px 30px 50px 70px;
+
+    border-width: ;
+    border-style: ;
+    border-color: ;
+    border: ;
+
+    font-size: ;
+    line-height: ;
+    letter-spacing: ;
+    
+    text-align: ;
+    text-transform: lowercase;
+    text-indent: 20px;
+    columns: 2;
+    column-gap:;
+
+    text-decoration:;
+    text-decoration-line: ;
+    text-decoration-thickness: ;
+    text-underline-offset: ;}
+    
+    list-style: ;
+    content: ;
+}
+
+*/
+
+
+/* General Styling */
+/* General Styling */
+body {
+    padding: 40px 10%;
+}
+
+/* Body Gradient Background with Rainbow-inspired colors */
+body {
+    background: linear-gradient(45deg, 
+      #FF0000, /* Red */
+      #FF7F00, /* Orange */
+      #FFFF00, /* Yellow */
+      #00FF00, /* Green */
+      #0000FF, /* Blue */
+      #4B0082, /* Indigo */
+      #8B00FF  /* Violet */
+    );
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s ease infinite;
+    font-family: Arial, sans-serif;
+}
+
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FF0000; /* Red */
+    margin-bottom: 50px;
+}
+
+p:first-of-type {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+section, div {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    border-top: 1px solid black;
+}
+
+::selection {
+    background-color: #FFFF00; /* Yellow */
+    color: black;
+}
+
+::-moz-selection {
+    background-color: #FFFF00;
+    color: black;
+}
+
+section:nth-of-type(1) {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+section:nth-of-type(1):hover {
+    background-color: #FF7F00; /* Orange */
+}
+
+section:nth-of-type(2) {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+section:nth-of-type(2):hover {
+    background-color: #00FF00; /* Green */
+}
+
+section:nth-of-type(3) {
+    background-color: #0000FF; /* Blue */
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+section:nth-of-type(4) {
+    margin-top: 100px;
+    border: 1px solid black;
+    padding: 20px;
+    padding-left: 40px;
+}
+
+section:nth-of-type(4) ul:first-of-type li:nth-of-type(2) {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px;
+}
+
+section:nth-of-type(4) ul:first-of-type li:hover {
+    text-decoration: line-through;
+}
+
+section:nth-of-type(4) ul:nth-of-type(2) {
+    list-style-type: none;
+    margin-top: -20px;
+}
+
+section:nth-of-type(4) ul:nth-of-type(2) li::before {
+    content: "\261E";
+    margin-right: 10px;
+}
+
+section:nth-of-type(4) ul:nth-of-type(2) li:nth-child(even) {
+    background-color: #8B00FF; /* Violet */
+}
+
+div {
+    border: 1px solid black;
+    outline: 25px solid #FFFF00; /* Yellow */
+    padding-left: 40px;
+}
+
+div > ol {
+    list-style-type: upper-roman;
+}
+
+div > ol li {
+    margin-bottom: 20px;
+}
+
+section:nth-of-type(5) p:first-of-type {
+    margin-bottom: 40px;
+}
+
+section:nth-of-type(5) div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+}
+
+section:nth-of-type(5) div p {
+    margin: 0;
+}
+
+section:nth-of-type(5) div p:not(:first-of-type) {
+    text-indent: 60px;
+}
+
+section:nth-of-type(6) p:nth-of-type(2) {
+    font-size: 44px;
+    line-height: 0.8;
+}
+
+section:nth-of-type(6) blockquote,
+section:nth-of-type(6) q {
+    color: #999; /* Soft Gray */
+    padding-left: 30px;
+    padding-right: 30px;
+    border-left: 1px solid black;
+}
+
+section:nth-of-type(6) blockquote {
+    margin-left: 30px;
+}
+
+section:nth-of-type(6) q {
+    border-right: 1px solid black;
+    margin-right: 10px;
+}
