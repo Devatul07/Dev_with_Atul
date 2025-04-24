@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Style Controls</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Style the Box Below</h2>
+
+  <label>
+    Text:
+    <input type="text" id="textInput" placeholder="Enter content">
+  </label><br><br>
+
+  <label>
+    Border Thickness (px):
+    <input type="number" id="borderInput" min="0" max="20" value="2">
+  </label><br><br>
+
+  <label>
+    Background Color Intensity (0-255):
+    <input type="range" id="colorRange" min="0" max="255" value="173">
+  </label><br><br>
+
+  <label>
+    Font Style:
+    <select id="fontSelect">
+      <option value="Arial">Arial</option>
+      <option value="Courier New">Courier New</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Verdana">Verdana</option>
+    </select>
+  </label>
+
+  <div id="styleBox">
+    Hello, style me!
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+body {
+    background-color: #eeeeee;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #cce5ff;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .box {
+    background-color: #add8e6;
+    padding: 40px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+  }
+  
+  #div1 {
+    width: 300px;
+    height: 200px;
+    float: right;
+  }
+  
+  #div2 {
+    clear: both;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
